@@ -32,7 +32,7 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 1000;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
 }
 
 .navbar.scrolled {
@@ -58,7 +58,7 @@ body {
     font-weight: 800;
     color: #14b8a6;
     text-shadow: 0 2px 4px rgba(20, 184, 166, 0.3);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .nav-logo:hover {
@@ -84,7 +84,7 @@ body {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
     border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -120,7 +120,7 @@ body {
     width: 0;
     height: 3px;
     background: linear-gradient(90deg, #14b8a6, #0f766e);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.3s ease;
     transform: translateX(-50%);
     border-radius: 2px;
 }
@@ -130,62 +130,13 @@ body {
     width: 100%;
 }
 
-.nav-icons {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.icon-btn {
-    position: relative;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
-    border: 1px solid rgba(20, 184, 166, 0.2);
-    font-size: 1.3rem;
-    color: #6b7280;
-    cursor: pointer;
-    padding: 0.75rem;
-    border-radius: 14px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-}
-
-.icon-btn:hover {
-    color: #14b8a6;
-    background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(20, 184, 166, 0.05));
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 30px rgba(20, 184, 166, 0.3);
-}
-
-.cart-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    color: white;
-    border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-}
-
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     padding: 0.75rem;
     border-radius: 12px;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .hamburger:hover {
@@ -197,7 +148,7 @@ body {
     height: 3px;
     background: linear-gradient(90deg, #14b8a6, #0f766e);
     margin: 4px 0;
-    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     border-radius: 2px;
     box-shadow: 0 1px 3px rgba(20, 184, 166, 0.3);
 }
@@ -320,11 +271,11 @@ body {
     font-weight: 700;
     font-size: 1.1rem;
     text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     border: none;
     position: relative;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .btn::before {
@@ -335,7 +286,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.6s ease;
+    transition: left 0.5s ease;
 }
 
 .btn:hover::before {
@@ -380,7 +331,7 @@ body {
     overflow: hidden;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
     transform: perspective(1000px) rotateY(-5deg);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
 }
 
 .image-container:hover {
@@ -392,7 +343,7 @@ body {
     width: 100%;
     height: 550px;
     object-fit: cover;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s ease;
     filter: brightness(1.05) contrast(1.05);
 }
 
@@ -411,7 +362,7 @@ body {
         rgba(15, 118, 110, 0.15) 50%,
         rgba(20, 184, 166, 0.08) 100%);
     opacity: 0.8;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
 }
 
 .image-container:hover .image-overlay {
@@ -447,7 +398,7 @@ body {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     border: 1px solid rgba(20, 184, 166, 0.1);
     backdrop-filter: blur(10px);
     position: relative;
@@ -463,7 +414,7 @@ body {
     height: 4px;
     background: linear-gradient(90deg, #14b8a6, #0f766e);
     transform: scaleX(0);
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
 }
 
 .advantage-card:hover::before {
@@ -488,7 +439,7 @@ body {
     font-size: 1.2rem;
     color: white;
     box-shadow: 0 8px 20px rgba(20, 184, 166, 0.3);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     position: relative;
 }
 
@@ -569,7 +520,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     border: 1px solid rgba(20, 184, 166, 0.1);
     backdrop-filter: blur(10px);
     position: relative;
@@ -584,7 +535,7 @@ body {
     bottom: 0;
     background: linear-gradient(135deg, rgba(20, 184, 166, 0.02), rgba(20, 184, 166, 0.01));
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
 }
 
 .book-card:hover::before {
@@ -607,7 +558,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s ease;
     filter: brightness(1.02) contrast(1.02);
 }
 
@@ -676,17 +627,6 @@ body {
     font-weight: 600;
 }
 
-.book-price {
-    margin-bottom: 2rem;
-}
-
-.price {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: #14b8a6;
-    text-shadow: 0 1px 2px rgba(20, 184, 166, 0.3);
-}
-
 .btn-book {
     width: 100%;
     padding: 1rem 2rem;
@@ -696,7 +636,7 @@ body {
     border-radius: 12px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -709,7 +649,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.6s ease;
+    transition: left 0.5s ease;
 }
 
 .btn-book:hover::before {
@@ -739,7 +679,7 @@ body {
     padding: 2rem 1.5rem;
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     border: 1px solid rgba(20, 184, 166, 0.1);
     backdrop-filter: blur(10px);
     text-align: center;
@@ -756,7 +696,7 @@ body {
     bottom: 0;
     background: linear-gradient(135deg, rgba(20, 184, 166, 0.02), rgba(20, 184, 166, 0.01));
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
 }
 
 .category-card:hover::before {
@@ -781,7 +721,7 @@ body {
     font-size: 2rem;
     color: white;
     box-shadow: 0 12px 30px rgba(20, 184, 166, 0.4);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     position: relative;
 }
 
@@ -862,7 +802,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -986,7 +926,7 @@ body {
     justify-content: center;
     color: #d1d5db;
     text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -1073,7 +1013,7 @@ body {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: all 0.3s ease;
         z-index: 999;
         backdrop-filter: blur(20px);
     }
@@ -1182,28 +1122,6 @@ body {
     }
 }
 
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .advantage-card,
 .book-card,
 .category-card {
@@ -1238,16 +1156,4 @@ body {
 
 .hero-image {
     animation: float 6s ease-in-out infinite;
-}
-
-/* LOADING ANIMATION */
-@keyframes shimmer {
-    0% { background-position: -200px 0; }
-    100% { background-position: calc(200px + 100%) 0; }
-}
-
-.loading {
-    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-    background-size: 200px 100%;
-    animation: shimmer 1.5s infinite;
 }

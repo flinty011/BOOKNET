@@ -150,7 +150,7 @@
                 <!-- Livre 1: Droit de l'image -->
                 <div class="book-card">
                     <div class="book-image">
-                        <img src="https://picsum.photos/280/300?random=1" alt="Droit de l'image">
+                        <img src="{{ asset('images/livre1.png') }}" alt="Droit de l'image">
                         <div class="book-badge">Nouveau</div>
                     </div>
                     <div class="book-info">
@@ -173,7 +173,7 @@
                 <!-- Livre 2: Algorithmique et algorithmes -->
                 <div class="book-card">
                     <div class="book-image">
-                        <img src="https://picsum.photos/280/300?random=2" alt="Algorithmique et algorithmes">
+                        <img src="{{ asset('images/livre2.png') }}" alt="Algorithmique et algorithmes">
                     </div>
                     <div class="book-info">
                         <h4>Algorithmique et algorithmes</h4>
@@ -195,7 +195,7 @@
                 <!-- Livre 3: La boussole dans les étoiles -->
                 <div class="book-card">
                     <div class="book-image">
-                        <img src="https://picsum.photos/280/300?random=3" alt="La boussole dans les étoiles">
+                        <img src="{{ asset('images/livre3.png') }}" alt="La boussole dans les étoiles">
                         <div class="book-badge">Populaire</div>
                     </div>
                     <div class="book-info">
