@@ -6,72 +6,71 @@
     <link rel="stylesheet" href="{{ asset('css/accueil.css') }}">
     <title>accueil</title>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accueil</title>
+    <link rel="stylesheet" href="{{ asset('css/accueil.css') }}">
+</head>
+
 <body>
 
 <header>
+    <div class="logo">
+        📖 <span>BOOK</span><b>NET</b>
+    </div>
 
-<div class="logo">
-📖 <span>BOOK</span><b>NET</b>
-</div>
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/catalogue">Catalogue</a>
+        <a href="/emprunts">Emprunts</a>
+        <a href="/retours">Retours</a>
+        <a href="/contact">Contact</a>
+    </nav>
 
-<nav>
-<a href="#">Accueil</a>
-<a href="#">Catalogue</a>
-<a href="#">Emprunts</a>
-<a href="#">Retours</a>
-<a href="#">Contact</a>
-</nav>
-
-<button class="login"><a href="/login">Se connecter</a></button>
-
+    <a href="/login" class="login-btn">Se connecter</a>
 </header>
 
-
 <section class="hero">
+    <div class="hero-text">
 
-<div class="hero-text">
+        <h1>Bienvenue sur <span>BOOK</span><b>NET</b></h1>
 
-<h1>Bienvenue sur <span>BOOK</span><b>NET</b></h1>
+        <p>Votre bibliothèque universitaire, à portée de clic.</p>
 
-<p>Votre bibliothèque universitaire, à portée de clic.</p>
+        <p class="desc">
+            Gérez, empruntez et retournez vos livres facilement et rapidement.
+        </p>
 
-<p class="desc">
-Gérez, empruntez et retournez vos livres facilement et rapidement.
-</p><br>
+        <div class="buttons">
+            <a href="/catalogue" class="catalogue">Voir le catalogue</a>
+            <a href="/login" class="connect">Se connecter</a>
+        </div>
 
-<div class="buttons">
+        <div class="stats">
 
-<a href="#" class="catalogue">Voir le catalogue</a>
+            <div class="card">
+                <h3>20,450</h3>
+                <p>Livres disponibles</p>
+            </div>
 
-<a href="/login" class="connect">Se connecter</a>
+            <div class="card">
+                <h3>3,820</h3>
+                <p>Emprunts actifs</p>
+            </div>
 
-</div>
+            <div class="card">
+                <h3>1,250</h3>
+                <p>Étudiants inscrits</p>
+            </div>
 
-<div class="stats">
+        </div>
 
-<div class="card">
-<h3>20,450</h3>
-<p>Livres disponibles</p>
-</div>
-
-<div class="card">
-<h3>3,820</h3>
-<p>Emprunts actifs</p>
-</div>
-
-<div class="card">
-<h3>1,250</h3>
-<p>Étudiants inscrits</p>
-</div>
-
-</div>
-
-</div>
-
-
-
-
+    </div> <!-- hero-text -->
 </section>
 
 </body>
+</html>
 </html>
